@@ -45,7 +45,18 @@ font-family: Helvetica-Regular;
 .home {
   background:var(--bg-footer);
 }
-.img-personaje{
+.btn_login{
+  background: var(--color-contact);
+  border: none;
+}
+
+body section{
+  margin: 8em 0 8em 0;
+}
+body .home, body .slider {
+  margin: 0;
+}
+/* .img-personaje{
   width: 10em;
   height: auto;
 }
@@ -56,17 +67,14 @@ font-family: Helvetica-Regular;
 }
 .img-personaje:hover {
   filter: opacity(0.5);
-}
+} */
 
-.btn_login{
-  background: var(--color-contact);
-  border: none;
-}
 
-.img-filter{
+
+/* .img-filter{
   width: 10em;
   height: auto;
-}
+} */
 .btn-contact {
   background: var(--color-contact);
 }
