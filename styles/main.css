@@ -45,14 +45,24 @@ font-family: Helvetica-Regular;
 .home {
   background:var(--bg-footer);
 }
+.img-personaje{
+  width: 10em;
+  height: auto;
+}
+.content-zoom:hover {
+  -webkit-transform: scale(0.2);
+  transform: scale(0.8);
+  overflow: hidden;
+}
+.img-personaje:hover {
+  filter: opacity(0.5);
+}
 
 .btn_login{
   background: var(--color-contact);
   border: none;
 }
-.section_video{
-  background-color: var(--bg-purple);
-}
+
 .img-filter{
   width: 10em;
   height: auto;
