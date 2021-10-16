@@ -6,13 +6,11 @@
 }
 
 :root{
-  --bg-footer: #000000;
-  --bg-footer-two: #7963A8;
-  --bg-purple:#76448A;
-  --bg-rose:#ed3d3d;
-  --bg-white: #ffffff;
-  --color-grey:#706F6F;
-  --colo-blue:#324798;
+  --bg-black: hsl(0, 0%, 0%);
+  --bg-blue: hsl(224, 63%, 39%);
+  --bg-white: hsl(0, 0%, 100%);
+  --color-grey:hsl(0, 0%, 44%);
+  --color-contact:hsl(354, 70%, 54%);
 }
 
 @font-face{/*titulos*/
@@ -43,8 +41,28 @@ font-family: Helvetica-Regular;
 .home{
 background-color: var(--bg-white);
 }
-.logo{
-  width: 3em;
+.logo {
+  width: 5em;
+}
+.btn_login{
+  background: var(--color-contact);
+  border: none;
+}
+.btn-enviar {
+ background: var(--color-contact);
+ color: var(--bg-white);
+}
+.btn-enviar:hover{
+  color:var(--bg-white);
+  background: var(--bg-blue);
+}
+header span a{
+  color: var(--bg-blue);
+
+}
+header span a:hover{
+  text-decoration: none;
+  color: var(--color-grey);
 }
 .article-tittle{
  color:var(--bg-purple);

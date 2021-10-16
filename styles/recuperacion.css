@@ -1,0 +1,87 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+@font-face{
+  src: url(../Font/d-din/D-DIN-Bold.otf);
+  font-family: "DIN-Bold";
+  font-weight: normal;
+}
+@font-face{
+  src: url(../Font/Helvetica-Font/Helvetica.ttf);
+  font-family:"Helvetica-Regular";
+  font-weight: normal;
+}
+
+.text-bold{
+font-family: DIN-Bold;
+}
+.parrafo{
+font-family: Helvetica-Regular;
+} 
+
+:root{
+  --bg-black: hsl(0, 0%, 0%);
+  --bg-blue: hsl(224, 63%, 39%);
+  --bg-white: hsl(0, 0%, 100%);
+  --color-grey:hsl(0, 0%, 44%);
+  --color-contact:hsl(354, 70%, 54%);
+}
+
+.home {
+  background:var(--bg-black);
+}
+.logo {
+  width: 5em;
+}
+.btn_login{
+  background: var(--color-contact);
+  border: none;
+}
+.btn-enviar {
+ background: var(--color-contact);
+ color: var(--bg-white);
+}
+.btn-enviar:hover{
+  color:var(--bg-white);
+  background: var(--bg-blue);
+}
+header span a{
+  color: var(--bg-blue);
+}
+header span a:hover{
+  text-decoration: none;
+  color: var(--color-grey);
+}
+
+body .form_registrar{
+  margin-top: 4em;
+}
+body h3{
+  background: var(--bg-blue);
+  color: var(--bg-white); 
+}
+body form input{
+  margin: 1em 0;  
+  border: 1px solid var(--bg-blue);
+  border-radius: 1em;
+}
+body form input::placeholder{
+font-family: Helvetica-Regular;
+color: var(--bg-blue);
+}
+.btn_registrarse{
+  background: var(--bg-blue);
+  color: var(--bg-white); 
+}
+.btn_registrarse:hover{
+  background: var(--bg-blue);
+  color: var(--bg-white);
+  opacity: 50%; 
+}
+
+.footer {
+  background:var(--bg-black);
+}
+

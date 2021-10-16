@@ -18,7 +18,7 @@
     <header class="container py-2">
       <nav class="navbar navbar-dark navbar-expand-lg">
         <a href="./index.html" class="navbar-brand logo">
-          <img class="img-fluid logo" src="./Img/Logo responsive white.png" alt="Cientoonce" />
+          <img class="img-fluid logo" src="./Img/logo Spacerose.png" alt="Spacerose" />
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu">
           <span class="navbar-toggler-icon"></span>
@@ -50,9 +50,7 @@
                         <h2 class="text-center pb-3 text-bold">Inicio Sesión</h2>
                         <div class="form-group">
                           <label for="email">Correo electrónico</label>
-                          <input required type="email" class="form-control">
-                          <small id="emailHelp" class="form-text text-muted">No compartas tu correo electrónico con
-                            nadie</small>
+                          <input required type="email" class="form-control">                              
                         </div>
                         <div class="form-group">
                           <label for="password">Contraseña</label>
@@ -62,10 +60,11 @@
                           <input required type="checkbox" class="form-check-input">
                           <label>Mantenerme conectado</label>
                         </div>
-                        <button type="submit" class="btn btn-primary">Iniciar sesión</button>
+                        <div class="d-flex justify-content-center my-3"><button type="submit" class="btn btn-enviar text-bold">Iniciar sesión</button></div>
                         <div class="my-3">
-                          <span> ¿Ya tienes cuenta? <a href="#">Registrate</a></span><br>
-                          <span><a href="#">Recuperar contraseña</a></span>
+                          <span> ¿Ya tienes cuenta? 
+                          <a href="./registrarse.html">Registrate</a></span> /
+                          <span><a href="./recuperacion.html">Recuperar contraseña</a></span>
                         </div>
                       </form>
                     </div>
@@ -80,7 +79,6 @@
   </section>
 
   <section class="slider">
-    <div class="container col-10">
       <div id="carousel" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
           <li data-target="#carousel" data-slide-to="0" class="active"></li>
@@ -103,78 +101,67 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="sr-only">Next</span>
           </a>
-        </div>
-      </div>
+        </div>      
   </section>
 
-
   <section>
-    <div class="container col-8">
-      <div class=" row d-flex align-items-center flex-column">
-        <h3 class="mb-5">Sobre SpaceROSE</h3>
-        <div class="row">
+    <div class="container">
+      <div class="row">
+        <h3 class="mb-5 text-center">Sobre SpaceROSE</h3>
+        <div class="row d-flex align-items-center">
           <article class="col-6">
-            <video autoplay loop  class="embed-responsive embed-responsive-16by9" src="./Video/logo_spacerose.mp4" width="560" height="315" ></video>
+            <video autoplay loop class="embed-responsive embed-responsive-16by9 shadow p-3 mb-5 bg-body rounded "
+              src="./Video/logo_spacerose.mp4" width="500" height="300"></video>
           </article>
-
-          <article class="col-6 p-5">
-            <p class=" "> En 1955 se da inicio a lo que hoy se conoce como la carrera espacial, una competencia entre
-              dos grandes
-              bandos (URSS Y U.S.A)
-              que luchan por la gloria, con ese objetivo en mente, en Estados Unidos de América se crea el proyecto
-              Apollo. La historia es ambientada en los años 60, y se centrará en el alunizaje realizado por Apollo 11,
-              este relato será narrado por Katherine Johnson,
-              mujer afrodescendiente que realizó los cálculos que hicieron posible dicho suceso. </p>
-
-            <button class="btn btn-danger my-4">Leer Comic</button>
-          </article>
-
+          <div class="col-6 text-right">
+            <article class="text-justify">
+              <p>En 1955 se da inicio a lo que hoy se conoce como la carrera espacial, una competencia entre
+                dos grandes bandos (URSS Y U.S.A) que luchan por la gloria, con ese objetivo en mente, en Estados Unidos
+                de América se crea el proyecto
+                Apollo. La historia es ambientada en los años 60, y se centrará en el alunizaje realizado por Apollo 11,
+                este relato será narrado por Katherine Johnson, mujer afrodescendiente que realizó los cálculos que
+                hicieron posible dicho suceso. </p>
+            </article>
+            <button class="btn btn-danger mt-2">Leer Comic</button>
+          </div>
         </div>
-
-
-
       </div>
     </div>
   </section>
 
-
-
   <section>
     <div class="container">
-      <h2>Personajes</h2>
-      <div class="row">
-        <article>
-          <img src="#" alt="">
-          <h5>Name</h5>
-          <p>cargo</p>
+      <h3>Personajes</h3>
+      <div class="row text-center col-lg-12">
+        <article class="m-5">
+          <img class="img_personajes img-fluid content-zoom" src="./Img/Katerine.png" alt="">
+          <h5>Katerine Johnson</h5>
+          <p>Matematica</p>
         </article>
-        <article>
-          <img src="#" alt="">
-          <h5>Name</h5>
-          <p>cargo</p>
+        <article class="m-5">
+          <img class="img_personajes img-fluid content-zoom" src="./Img/Kranz.png" alt="">
+          <h5>Eugene Kranz</h5>
+          <p>Director vuelo</p>
         </article>
-        <article>
-          <img src="#" alt="">
-          <h5>Name</h5>
-          <p>cargo</p>
+        <article class="m-5">
+          <img class="img_personajes img-fluid content-zoom" src="./Img/neils.png" alt="">
+          <h5>Neil Armstrong</h5>
+          <p>Astronauta</p>
         </article>
-      </div>
-
-      <div class="row">
-        <article>
-          <img src="#" alt="">
-          <h5>Name</h5>
-          <p>cargo</p>
+        <article class="m-5">
+          <img class="img_personajes img-fluid content-zoom" src="./Img/aldrin.png" alt="">
+          <h5>Buzz Aldrin</h5>
+          <p>Ingeniero/Astronauta</p>
         </article>
-        <article>
-          <img src="#" alt="">
-          <h5>Name</h5>
-          <p>cargo</p>
+        <article class="m-5">
+          <img class="img_personajes img-fluid content-zoom" src="./Img/collin.png" alt="">
+          <h5>Michael Collins</h5>
+          <p>Astronauta</p>
         </article>
-        <article>
-          <img src="#" alt="">
-          <h5>Name</h5>
-          <p>cargo</p>
+        <article class="m-5">
+          <img class="img_personajes img-fluid content-zoom" src="./Img/extra masculino.png" alt="">
+          <h5>Compañero</h5>
+          <p>Extra</p>
         </article>
       </div>
     </div>
@@ -182,40 +169,23 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  <!-- section 3 Colaboradores-->
-  <section>
+   <section>
     <div class="container">
-      <h2 class="text-center py-5 text-bold">Colaboradores</h2>
+      <h3 class="text-bold">Colaboradores</h3>
       <div class="row text-center">
         <div class="col-lg-4 pb-5">
-          <img src="./Img/estefa_photo.jpg" class="img-filter img-fluid  " alt="Estefa_photo">
+          <img src="./Img/estefa_photo.jpg" class="img_personajes img-fluid  " alt="Estefa_photo">
           <h4 class="text-bold">Estefanía Marín</h4>
           <p class="parrafo">"Estudiante SENA"</p>
         </div>
         <div class="col-lg-4  pb-5">
-          <img src="./Img/camilo-photo.jpg" class="img-filter img-fluid" alt="camilo_photo">
+          <img src="./Img/camilo-photo.jpg" class="img_personajes img-fluid" alt="camilo_photo">
           <h4 class="text-bold">Juan C. Gutierrez</h4>
           <p class="parrafo">"Estudiante SENA"</p>
         </div>
 
         <div class="col-lg-4">
-          <img src="./Img/Sharon_photos.jpg" class="img-filter img-fluid" alt="sharon_photo">
+          <img src="./Img/Sharon_photos.jpg" class="img_personajes img-fluid" alt="sharon_photo">
           <h4 class="text-bold">Sharon Osorno</h4>
           <p class="parrafo">"Estudiante SENA"</p>
         </div>
