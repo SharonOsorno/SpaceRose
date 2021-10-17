@@ -23,7 +23,7 @@ font-family: Helvetica-Regular;
 
 :root{
   --bg-black: hsl(0, 0%, 0%);
-  --bg-blue: hsl(224, 63%, 39%);
+  --bg-blue: hsl(228, 50%, 41%);
   --bg-white: hsl(0, 0%, 100%);
   --color-grey:hsl(0, 0%, 44%);
   --color-contact:hsl(354, 70%, 54%);
@@ -80,6 +80,26 @@ color: var(--bg-blue);
   color: var(--bg-white);
   opacity: 50%; 
 }
+
+.btn-contact {
+  background: var(--bg-blue);
+}
+.iconContact {
+  border-radius: 100%;
+  width: 60px;
+  height: 60px;
+  background: var(--bg-blue);
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 10;  
+}
+.Contact_content{ 
+  position: fixed;
+  bottom: 5em;
+  right: -50em;
+  z-index: 20;
+} 
 
 .footer {
   background:var(--bg-black);

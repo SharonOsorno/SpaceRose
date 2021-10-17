@@ -23,7 +23,7 @@ font-family: Helvetica-Regular;
 
 :root{
   --bg-black: hsl(0, 0%, 0%);
-  --bg-blue: hsl(224, 63%, 39%);
+  --bg-blue: hsl(228, 50%, 41%);
   --bg-white: hsl(0, 0%, 100%);
   --color-grey:hsl(0, 0%, 44%);
   --color-contact:hsl(354, 70%, 54%);

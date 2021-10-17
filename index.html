@@ -5,13 +5,14 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>cientonce-Home</title>
+  <title>SpaceRose-Home</title>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="shortcut icon" href="./Img/favicon.ico">
   <link rel="stylesheet" href="./styles/main.css" />
 </head>
 
-<body>
+<body class="parrafo">
 
 
   <section class="home">
@@ -50,7 +51,7 @@
                         <h2 class="text-center pb-3 text-bold">Inicio Sesión</h2>
                         <div class="form-group">
                           <label for="email">Correo electrónico</label>
-                          <input required type="email" class="form-control">                              
+                          <input required type="email" class="form-control">
                         </div>
                         <div class="form-group">
                           <label for="password">Contraseña</label>
@@ -60,10 +61,11 @@
                           <input required type="checkbox" class="form-check-input">
                           <label>Mantenerme conectado</label>
                         </div>
-                        <div class="d-flex justify-content-center my-3"><button type="submit" class="btn btn-enviar text-bold">Iniciar sesión</button></div>
+                        <div class="d-flex justify-content-center my-3"><button type="submit"
+                            class="btn btn-enviar text-bold">Iniciar sesión</button></div>
                         <div class="my-3">
-                          <span> ¿Ya tienes cuenta? 
-                          <a href="./registrarse.html">Registrate</a></span> /
+                          <span> ¿Ya tienes cuenta?
+                            <a href="./registrarse.html">Registrate</a></span> /
                           <span><a href="./recuperacion.html">Recuperar contraseña</a></span>
                         </div>
                       </form>
@@ -79,42 +81,42 @@
   </section>
 
   <section class="slider">
-      <div id="carousel" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carousel" data-slide-to="0" class="active"></li>
-          <li data-target="#carousel" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <video autoplay loop src="./Video/logo_spacerose.mp4" class="d-block w-100"></video>
-          </div>
-          <div class="carousel-item">
-            <img src="./Img/universe.jpg" class="d-block w-100 video_logo" alt="...">
-          </div>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carousel" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel" data-slide-to="1"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <video autoplay loop src="./Video/logo_spacerose.mp4" class="d-block w-100"></video>
+        </div>
+        <div class="carousel-item">
+          <img src="./Img/universe.jpg" class="d-block w-100 " alt="...">
+        </div>
 
 
-          <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>      
+        <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carousel" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
   </section>
 
   <section>
-    <div class="container">
+    <div class="container d-flex justify-content-center">
       <div class="row">
-        <h3 class="mb-5 text-center">Sobre SpaceROSE</h3>
+        <h3 class="text-center">Sobre SpaceROSE</h3>
         <div class="row d-flex align-items-center">
           <article class="col-6">
-            <video autoplay loop class="embed-responsive embed-responsive-16by9 shadow p-3 mb-5 bg-body rounded "
+            <video autoplay loop class="embed-responsive embed-responsive-16by9 shadow p-3 mb-5 bg-body rounded"
               src="./Video/logo_spacerose.mp4" width="500" height="300"></video>
           </article>
           <div class="col-6 text-right">
-            <article class="text-justify">
+            <article class="text-justify ">
               <p>En 1955 se da inicio a lo que hoy se conoce como la carrera espacial, una competencia entre
                 dos grandes bandos (URSS Y U.S.A) que luchan por la gloria, con ese objetivo en mente, en Estados Unidos
                 de América se crea el proyecto
@@ -122,7 +124,37 @@
                 este relato será narrado por Katherine Johnson, mujer afrodescendiente que realizó los cálculos que
                 hicieron posible dicho suceso. </p>
             </article>
-            <button class="btn btn-danger mt-2">Leer Comic</button>
+
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn_login text-white parrafo" data-toggle="modal"
+              data-target="#leercomic">
+              Leer comic
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade modal_leer" id="leercomic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body d-flex justify-content-center text-center p-5">
+                    <form action="">
+                      <h2 class="text-bold">Bienvenido(a) Aventurero(a)</h2>
+                      <p class="my-2">Pronto daremos inicio a la misión</p>
+                      <p>¿Estas listo(a)?</p>
+                      <div>
+                        <input class="my-3 text-center" type="text" placeholder="Ingrese su alias">
+                      </div>
+                      <button class="leer p-2 m-2 text-white" > <a href="./lecturacomic.html">Estoy listo(a)</a></button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </div>
@@ -131,64 +163,92 @@
 
   <section>
     <div class="container">
-      <h3>Personajes</h3>
-      <div class="row text-center col-lg-12">
-        <article class="m-5">
-          <img class="img_personajes img-fluid content-zoom" src="./Img/Katerine.png" alt="">
-          <h5>Katerine Johnson</h5>
-          <p>Matematica</p>
-        </article>
-        <article class="m-5">
-          <img class="img_personajes img-fluid content-zoom" src="./Img/Kranz.png" alt="">
-          <h5>Eugene Kranz</h5>
-          <p>Director vuelo</p>
-        </article>
-        <article class="m-5">
-          <img class="img_personajes img-fluid content-zoom" src="./Img/neils.png" alt="">
-          <h5>Neil Armstrong</h5>
-          <p>Astronauta</p>
-        </article>
-        <article class="m-5">
-          <img class="img_personajes img-fluid content-zoom" src="./Img/aldrin.png" alt="">
-          <h5>Buzz Aldrin</h5>
-          <p>Ingeniero/Astronauta</p>
-        </article>
-        <article class="m-5">
-          <img class="img_personajes img-fluid content-zoom" src="./Img/collin.png" alt="">
-          <h5>Michael Collins</h5>
-          <p>Astronauta</p>
-        </article>
-        <article class="m-5">
-          <img class="img_personajes img-fluid content-zoom" src="./Img/extra masculino.png" alt="">
-          <h5>Compañero</h5>
-          <p>Extra</p>
-        </article>
+      <div class="row">
+        <h3 class="text-center">Personajes</h3>
+        <div class="row text-center d-flex justify-content-center">
+
+          <article class="m-5">
+            <img class="img_personajes img-fluid" src="./Img/Katerine.png" alt="">
+            <h5 class="text-bold">Katerine Johnson</h5>
+            <p>Matematica</p>
+          </article>
+
+          <article class="m-5">
+            <img class="img_personajes img-fluid" src="./Img/Kranz.png" alt="">
+            <h5 class="text-bold">Eugene Kranz</h5>
+            <p>Director vuelo</p>
+          </article>
+
+          <article class="m-5">
+            <img class="img_personajes img-fluid" src="./Img/neils.png" alt="">
+            <h5 class="text-bold">Neil Armstrong</h5>
+            <p>Astronauta</p>
+          </article>
+
+          <article class="m-5">
+            <img class="img_personajes img-fluid" src="./Img/aldrin.png" alt="">
+            <h5 class="text-bold">Buzz Aldrin</h5>
+            <p>Ingeniero/Astronauta</p>
+          </article>
+
+          <article class="m-5">
+            <img class="img_personajes img-fluid" src="./Img/collin.png" alt="">
+            <h5 class="text-bold">Michael Collins</h5>
+            <p>Astronauta</p>
+          </article>
+
+          <article class="m-5">
+            <img class="img_personajes img-fluid" src="./Img/extra masculino.png" alt="">
+            <h5 class="text-bold">Compañero</h5>
+            <p>Extra</p>
+          </article>
+
+        </div>
       </div>
     </div>
   </section>
 
 
+  <section>
+    <div class="container ">
+      <h3 class="text-center">Galeria</h3>
+      <div class="row gallery d-flex justify-content-center">
+        <img class="shadow p-3 mb-5 bg-body rounded" src="./Img/slider gallery/Escena 6-1.jpg" alt="">
+        <img class="shadow p-3 mb-5 bg-body rounded" src="./Img/slider gallery/Escena 6-3.jpg" alt="">
+        <img class="shadow p-3 mb-5 bg-body rounded" src="./Img/slider gallery/Escena 9-1.jpg" alt="">
+        <img class="shadow p-3 mb-5 bg-body rounded" src="./Img/slider gallery/escena 9-9.jpg" alt="">
+        <img class="shadow p-3 mb-5 bg-body rounded" src="./Img/slider gallery/Escena 8-1.jpg" alt="">
+        <img class="shadow p-3 mb-5 bg-body rounded" src="./Img/slider gallery/Escena 9-4.jpg" alt="">
+        <img class="shadow p-3 mb-5 bg-body rounded" src="./Img/slider gallery/Escena 6-2.jpg" alt="">
+        <img class="shadow p-3 mb-5 bg-body rounded" src="./Img/slider gallery/Escena 9-4.jpg" alt="">
+      </div>
+    </div>
+  </section>
 
-   <section>
+
+  <section>
     <div class="container">
-      <h3 class="text-bold">Colaboradores</h3>
+      <h3 class="text-bold">Equipo de trabajo</h3>
       <div class="row text-center">
+
         <div class="col-lg-4 pb-5">
-          <img src="./Img/estefa_photo.jpg" class="img_personajes img-fluid  " alt="Estefa_photo">
+          <img src="./Img/Estefa_photo.png" class="img_personajes img-fluid mb-4" alt="Estefa_photo">
           <h4 class="text-bold">Estefanía Marín</h4>
           <p class="parrafo">"Estudiante SENA"</p>
         </div>
+
         <div class="col-lg-4  pb-5">
-          <img src="./Img/camilo-photo.jpg" class="img_personajes img-fluid" alt="camilo_photo">
+          <img src="./Img/Camilo_photo.png" class="img_personajes img-fluid mb-4" alt="camilo_photo">
           <h4 class="text-bold">Juan C. Gutierrez</h4>
           <p class="parrafo">"Estudiante SENA"</p>
         </div>
 
         <div class="col-lg-4">
-          <img src="./Img/Sharon_photos.jpg" class="img_personajes img-fluid" alt="sharon_photo">
+          <img src="./Img/Sharon_photo.png" class="img_personajes img-fluid mb-4" alt="sharon_photo">
           <h4 class="text-bold">Sharon Osorno</h4>
           <p class="parrafo">"Estudiante SENA"</p>
         </div>
+
       </div>
     </div>
   </section>
@@ -219,11 +279,11 @@
             <div class="col-12">
               <div class="form-group ">
                 <label for="Name" class="parrafo">Nombre y apellidos</label>
-                <input required type="text" class="form-control parrafo" placeholder="Nombre y apellidos">
+                <input required type="text" class="form-control parrafo" placeholder="">
               </div>
               <div class="form-group ">
                 <label for="Email" class="parrafo">Email</label>
-                <input required type="email" class="form-control parrafo" placeholder="Email">
+                <input required type="email" class="form-control parrafo" placeholder="">
               </div>
               <div class="form-group ">
                 <label for="Coment" class="parrafo">Comentario</label>
@@ -246,25 +306,24 @@
     </div>
   </div>
 
-  <!-- footer-->
+
   <section class="footer">
     <div class="container">
-      <footer class="row p-3 mt-5 justify-content-around align-items-center">
-        <div>
+      <footer class="row p-5 mt-5 justify-content-around align-items-center">
+        <!-- <div>
           <picture>
-            <img class="img-fluid logo" src="./Img/Logo responsive white.png" alt="Cientonce">
+            <img class="img-fluid logo" src="./Img/logo Spacerose.png" alt="Cientonce">
           </picture>
-        </div>
+        </div> -->
 
         <div class>
-          <span class="text-white text-center">&copy;2020<b>Cientonce</b></span>
+          <span class="text-white text-center">&copy;2020<b> SpaceRose</b></span>
         </div>
 
-        <div class=>
+        <!-- <div>
           <a href="https://es-la.facebook.com"><i class="fab fa-facebook-f text-white "></i></a>
-          <a href="https://twitter.com/?lang=es"> <i class="fab fa-twitter text-white mx-3"></i> </a>
-          <a href="#"><i class="fab fa-youtube text-white"></i> </a>
-        </div>
+          <a href="#"><i class="fab fa-youtube text-white"></i></a>
+        </div> -->
       </footer>
     </div>
   </section>
