@@ -37,21 +37,8 @@ font-family: Helvetica-Regular;
 .logo {
   width: 5em;
 }
-.btn_login{
-  background: var(--color-red);
-  border: none;
-}
-.btn-enviar {
- background: var(--color-red);
- color: var(--bg-white);
-}
-.btn-enviar:hover{
-  color:var(--bg-white);
-  background: var(--bg-blue);
-}
 header span a{
   color: var(--bg-blue);
-
 }
 header span a:hover{
   text-decoration: none;
@@ -59,21 +46,11 @@ header span a:hover{
 }
 .home {
   background:var(--bg-footer);
-}
-.btn_login{
-  background: var(--color-red);
-  border: none;
+ z-index: 1;
 }
 
-body section{
-  margin: 8em 0 8em 0;
-}
-body .home, body .slider, body .footer {
-  margin: 0;
-}
-.carousel-inner {
-  height: 40em;
-}
+
+
 body h3{
  color: var(--bg-white);
  background: var(--color-red);
@@ -87,25 +64,19 @@ body h3:hover{
   filter: opacity(0.8);
  }
 
-.modal_leer .modal-body input{
-  padding: 0.5em;
-  border-radius:1em;
-  border-color: var(--bg-blue);
-  border-width: medium;
-}
-.modal_leer .modal-body input::placeholder{
-  text-align: center;
-}
-.modal_leer .modal-body .leer{
-  background: var(--bg-blue);
-  border-radius: 0.2em;
-  border: none;
-}
-.modal_leer .modal-body .leer:hover{
-  opacity: 0.5;
+body .banner {
+ box-sizing: content-box;
+ width: 1400px;
+ height: 550px;
+ background: url(../Img/banner002.png);
+ background-repeat: no-repeat;
+ background-size: cover;
 }
 
 
+body {
+background-image: url(../Img/);
+}
 .img_personajes{
   width: 10em;
   height: auto;
