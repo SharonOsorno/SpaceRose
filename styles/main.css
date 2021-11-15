@@ -3,8 +3,8 @@
   padding: 0;
   border: 0; 
   outline: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+  box-sizing: content-box;
+  text-decoration: none;  
   }
 
 @font-face{
@@ -23,17 +23,20 @@ font-family: DIN-Bold;
 }
 .parrafo{
 font-family: Helvetica-Regular;
+font-size: 20px;
 } 
 
 :root{
   --bg-footer: hsl(0, 0%, 0%);
-  --bg-blue: hsl(228, 50%, 41%);
+  --color-blue: hsl(228, 50%, 41%);
   --bg-purple:hsl(283, 34%, 40%);
   --bg-white: hsl(0, 0%, 100%);
   --color-grey:hsl(0, 0%, 44%);
   --color-red:hsl(354, 70%, 54%);
 }
-
+body a:hover{
+  text-decoration: none;
+}
 .Header{
   background-color: var(--bg-footer);
  }
@@ -44,32 +47,95 @@ font-family: Helvetica-Regular;
 /*Seccion 1*/
 body .banner .container{
    position: absolute;
-   top: 15em;
+   top: 10em;
    left: 10em;
- }
- body .banner img{
-  border-bottom-right-radius: 10em;
-  border-top-right-radius: 10em;
-}
+ } 
  body .banner .container h1{
    font-size: 4em;
  }
  body .banner .container a{
   font-size: 2em;
-  margin-top: 5em;
   background: var(--color-red);
-  border-radius: 1.5em;
+  border-radius:4em;
 }
 
 /*seccion 2*/
+body .about {
+  margin: 5em 0;
+}
 body .about h1{
   color: var(--color-red);
   font-size: 5em;
 }
+body .about .container article .btn_leer{
+  font-size: 1em;
+  background: var(--color-red);
+  border-radius:4em;
+}
 
 
+/*seccion3*/
+.personage {
+ background-image: url(../img/bg/bg-personages002.jpg);
+ background-repeat: no-repeat;
+ margin-top: 12em;
+ margin-bottom: 5em;
+}
+body .personage h1{
+  margin-top: 1em;
+  font-size: 5em;  
+}
+body .personage .parrafo{
+ font-size: 1.5em;  
+}
+body .personage img {
+  width: 15em;
+}
+body .personage article button {
+  background-color: transparent;
+  border: transparent;
+  margin: 2em;
+}
+body .personage article button:hover {
+  background-color: var(--bg-white);
+  border: none;
+  border-radius: 2em;  
+}
 
+/*seccion 4*/
+body .team img {
+  width: 8em;
+}
+body .team h1 {
+  font-size: 4em;
+  color: var(--color-blue);
+}
 
+/*contact*/
+.btn-contact {
+  background: var(--color-red);
+}
+.iconContact {
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  background: var(--color-red);
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  z-index: 10;  
+}
+.Contact_content{ 
+  position: fixed;
+  bottom: 5em;
+  right: -50em;
+  z-index: 20;
+} 
+.privacidad{
+  color:var(--color-red);
+}
+
+/*footer*/
 .footer{
   background-color: var(--bg-footer);
 }

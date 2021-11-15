@@ -37,14 +37,12 @@
     </header>
   </div>
 
-
-
   <section class="banner">
-   <img class="img-fluid" src="./img/banner001.jpg" alt="">
+    <img class="img-fluid" src="./img/banner003.jpg" alt="">
     <div class="container">
-      <article class="text-left text-white text-bold m-5">
-        <h1 class="col-8 ">Bienvenido a esta aventura espacial</h1>
-        <a class="px-4 py-3 text-white d-inline">Despeguemos</a>
+      <article class="text-white text-bold m-5">
+        <h1 class="col-8 mb-5">Bienvenido a esta aventura espacial</h1>
+        <a type="submit" class="px-4 py-3 text-white d-inline">Despeguemos</a>
       </article>
     </div>
   </section>
@@ -53,19 +51,234 @@
     <div class="container d-flex justify-content-center  align-items-center">
       <article class="col-lg-6 col-md-12 col-sm-12 text-justify">
         <h1 class="text-bold">SpaceRose</h1>
-        <p>SpaceRose es una historia ambientada en los años 60, centrada en la llegada del hombre a la luna
-          en el Apollo 11, este relato será narrado por Katherine Johnson, mujer afrodescendiente que realizó
+        <p class="parrafo">SpaceRose es una historia ambientada en los años 60, centrada en la llegada del hombre a la
+          luna en el Apollo 11, este relato será narrado por Katherine Johnson, mujer afrodescendiente que realizó
           los cálculos que hicieron posible dicho suceso.
         </p>
+        <a type="submit" class=" mt-2 px-5 py-2 btn_leer text-white text-bold" href="./lecturacomic.html">
+          Leer comic
+        </a>
       </article>
-
       <article class="col-lg-6 col-md-12 col-sm-12">
         <video autoplay loop class="embed-responsive embed-responsive-16by9 shadow p-3 mb-5 bg-body rounded"
           src="./Video/logo_spacerose.mp4" width="500" height="300"></video>
       </article>
-
     </div>
   </section>
+
+  <Section class="personage">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <h1 class="text-bold text-white">Personajes</h1>
+      <p class="parrafo text-white">Conoce a nuestros protagonistas</p>
+      <article class="col-lg-12 mt-5 d-flex justify-content-center align-items-center">
+
+        <button type="button" data-toggle="modal" data-target="#modalkaterine">
+          <img src="./img/personajes/Katerine.png" alt="">
+        </button>
+        <button type="button" data-toggle="modal" data-target="#modalkranz">
+          <img src="./img/personajes/Kranz.png" alt="">
+        </button>
+        <button type="button" data-toggle="modal" data-target="#modalExtra">
+          <img src="./img/personajes/extra masculino.png" alt="">
+        </button>
+
+
+        <!-- Modal -->
+        <div class="modal fade modal_content" id="modalkaterine" tabindex="-1" aria-labelledby="ModalLabelkaterine"
+          aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabelkaterine">Katherine Jhonsone</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="modalkranz" tabindex="-1" aria-labelledby="ModalLabelkranz" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabelkranz">Kranz</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal fade" id="modalExtra" tabindex="-1" aria-labelledby="ModalLabelExtra" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabelExtra">Extras</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </article>
+
+      <article class="col-lg-12 mb-5 d-flex justify-content-center align-items-center">
+        <button type="button" data-toggle="modal" data-target="#modalNeils">
+          <img src="./img/personajes/neils.png" alt="">
+        </button>
+        <button type="button" data-toggle="modal" data-target="#modalCollin">
+          <img src="./img/personajes/collin.png" alt="">
+        </button>
+        <button type="button" data-toggle="modal" data-target="#modalAldrin">
+          <img src="./img/personajes/aldrin.png" alt="">
+        </button>
+
+
+        <div class="modal fade" id="modalNeils" tabindex="-1" aria-labelledby="ModalLabelNeils" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabelNeils">Neils Anrmtrong</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modalCollin" tabindex="-1" aria-labelledby="ModalLabelCollin" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabelCollin">Collin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="modal fade" id="modalAldrin" tabindex="-1" aria-labelledby="ModalLabelAldrin" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="ModalLabelAldrin">Aldrin</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                ...
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </Section>
+
+  <section class="team d-flex flex-column justify-content-center">
+    <h1 class="text-bold text-center mb-5">Equipo de trabajo</h1>
+
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+      <div class="d-flex text-center col-lg-12">
+
+        <div class="col-lg-4 pb-5">
+          <img src="./img/equipo/Estefa_photo.png" class="img-fluid mb-4" alt="Estefa_photo">
+          <h4 class="text-bold">Estefanía Marín</h4>
+          <p class="parrafo">"Estudiante SENA"</p>
+        </div>
+
+        <div class="col-lg-4  pb-5">
+          <img src="./img/equipo/Camilo_photo.png" class=" img-fluid mb-4" alt="camilo_photo">
+          <h4 class="text-bold">Juan C. Gutierrez</h4>
+          <p class="parrafo">"Estudiante SENA"</p>
+        </div>
+
+        <div class="col-lg-4">
+          <img src="./img/equipo/Sharon_photo.png" class="img-fluid mb-4" alt="sharon_photo">
+          <h4 class="text-bold">Sharon Osorno</h4>
+          <p class="parrafo">"Estudiante SENA"</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- btn contact -->
+  <button type="button" class=" border-0 iconContact" data-toggle="modal" data-target="#contact">
+    <i role="button" class="fas fa-headset text-white"></i>
+  </button>
+
+  <!-- Modal -->
+  <div class="modal fade " id="contact" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content col-12">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form id="contactForm" class="row justify-content-center align-items-center">
+            <div class="col-12 btn-contact py-4 mb-3">
+              <div class=" justify-content-center text-center text-white">
+                <h4 class="text-bold">¿Podemos ayudarte en algo?</h4>
+                <p class="subtitle">Con gusto te asesoramos</p>
+              </div>
+            </div>
+            <div class="col-10">
+              <div class="form-group ">
+                <label for="Name" class="parrafo">Nombre y apellidos</label>
+                <input required type="text" class="form-control parrafo" placeholder="">
+              </div>
+              <div class="form-group ">
+                <label for="Email" class="parrafo">Email</label>
+                <input required type="email" class="form-control parrafo" placeholder="">
+              </div>
+              <div class="form-group ">
+                <label for="Coment" class="parrafo">Comentario</label>
+                <textarea type="text" class="form-control parrafo" cols="0" rows="0"
+                  placeholder="Escribe tu comentario..."></textarea>
+              </div>
+              <div class="form-group text-center">
+                <div class="form-check">
+                  <input required class="form-check-input" type="checkbox" id="gridCheck">
+                  <label class="form-check-label parrafo" for="gridCheck">
+                    Acepto la <a href="#" class="privacidad text-decoration-none text-bold ">politica de privacidad</a>
+                  </label>
+                </div>
+                <button type="submit" class="btn btn-contact text-white parrafo mt-3">Enviar</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
 
   <div class="footer">
