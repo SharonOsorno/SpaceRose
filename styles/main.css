@@ -1,10 +1,13 @@
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  border: 0; 
+  outline: 0;
+  box-sizing: border-box;
   text-decoration: none;
-}
+  }
 
-@font-face{/*titulos*/
+@font-face{
   src: url(../Font/d-din/D-DIN-Bold.otf);
   font-family: "DIN-Bold";
   font-weight: normal;
@@ -31,115 +34,42 @@ font-family: Helvetica-Regular;
   --color-red:hsl(354, 70%, 54%);
 }
 
-.logo {
-  width: 3em;
-}
-.logo {
+.Header{
+  background-color: var(--bg-footer);
+ }
+.Header header .logo{
   width: 5em;
 }
-header span a{
-  color: var(--bg-blue);
-}
-header span a:hover{
-  text-decoration: none;
-  color: var(--color-grey);
-}
-.home {
-  background:var(--bg-footer);
- z-index: 1;
-}
 
-
-
-body h3{
- color: var(--bg-white);
- background: var(--color-red);
- padding: 1em;
- width: 12em;
- margin-bottom: 2em;
- border-top-right-radius: 1em;
- border-bottom-right-radius: 1em;
-}
-body h3:hover{
-  filter: opacity(0.8);
+/*Seccion 1*/
+body .banner .container{
+   position: absolute;
+   top: 15em;
+   left: 10em;
  }
+ body .banner img{
+  border-bottom-right-radius: 10em;
+  border-top-right-radius: 10em;
+}
+ body .banner .container h1{
+   font-size: 4em;
+ }
+ body .banner .container a{
+  font-size: 2em;
+  margin-top: 5em;
+  background: var(--color-red);
+  border-radius: 1.5em;
+}
 
-body .banner {
- box-sizing: content-box;
- width: 1400px;
- height: 550px;
- background: url(../Img/banner002.png);
- background-repeat: no-repeat;
- background-size: cover;
+/*seccion 2*/
+body .about h1{
+  color: var(--color-red);
+  font-size: 5em;
 }
 
 
-body {
-background-image: url(../Img/);
-}
-.img_personajes{
-  width: 10em;
-  height: auto;
-}
-.img_personajes:hover {
-  -webkit-transform: scale(0.2);
-  transform: scale(0.8);
-  overflow: hidden;
-}
-
-.gallery img {
-width: 20em;
-margin: 0.5em;
-
-}
-.gallery img:hover {
-  animation: move 0.82s cubic-bezier(.36,.07,.19,.97) both;
-  transform: translate3d(0, 0, 0);
-  backface-visibility: hidden;   
-  opacity: 60%;
-}
-
-.btn-contact {
-  background: var(--bg-blue);
-}
-.iconContact {
-  border-radius: 100%;
-  width: 60px;
-  height: 60px;
-  background: var(--bg-blue);
-  position: fixed;
-  bottom: 100px;
-  right: 50px;
-  z-index: 10;  
-}
-.Contact_content{ 
-  position: fixed;
-  bottom: 5em;
-  right: -50em;
-  z-index: 20;
-} 
-.privacidad{
-  color:var(--color-red);
-}
-.footer {
-  background:var(--bg-footer);
-}
 
 
-@keyframes move {
-  10%, 90% {
-    transform: translate3d(-1px, 0, 0);
-  }
-  
-  20%, 80% {
-    transform: translate3d(2px, 0, 0);
-  }
-
-  30%, 50%, 70% {
-    transform: translate3d(-4px, 0, 0);
-  }
-
-  40%, 60% {
-    transform: translate3d(4px, 0, 0);
-  }
+.footer{
+  background-color: var(--bg-footer);
 }
