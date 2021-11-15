@@ -59,25 +59,24 @@ body a:hover{
   justify-content: center;
 }
 
-/* Button */
-button {
+.flipbook button {
   border: none;
   background-color: transparent;
-  margin: 10px;
+  margin: 5em;
   cursor: pointer;
-  transition: transform 0.5s;
+  transition: transform 1s;
 }
 
-button:focus {
+.flipbook button:focus {
   outline: none;
 }
 
-button:hover i {
-  color: rgb(102, 102, 102);
+.flipbook button:hover i {
+  color:var(--color-red);
 }
 
 .flipbook i {
-  color: gray;
+  color:var(--color-red);
   font-size: 4em;
 }
 
@@ -86,7 +85,7 @@ button:hover i {
   width: 350px;
   height: 500px;
   position: relative;
-  transition: transform 0.5s;
+  transition: transform 1s;
 }
 
 .paper {
@@ -115,7 +114,7 @@ button:hover i {
   align-items: center;
   background-color: white;
   transform-origin: left;
-  transition: transform 0.5s;
+  transition: transform 1s;
 }
 
 .front {
