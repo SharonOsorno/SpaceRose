@@ -88,7 +88,7 @@ body a:hover{
   transition: transform 1s;
 }
 
-.paper {
+.pagina {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -97,6 +97,16 @@ body a:hover{
   perspective: 1500px;
 }
 
+.pagina  .logo{
+  width: 5em;
+}
+.pagina  .parrafo{
+ font-size: 14px;
+}
+.pagina .team p{
+ font-size: 12px;
+ line-height : 2px;
+}
 .front {
   backface-visibility: hidden;
   border-left: 3px solid var(--color-blue);

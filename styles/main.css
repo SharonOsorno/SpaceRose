@@ -23,7 +23,6 @@ font-family: DIN-Bold;
 }
 .parrafo{
 font-family: Helvetica-Regular;
-font-size: 20px;
 } 
 
 :root{
@@ -48,7 +47,7 @@ body a:hover{
 body .banner .container{
    position: absolute;
    top: 10em;
-   left: 10em;
+   left: 5em;
  } 
  body .banner .container h1{
    font-size: 4em;
@@ -64,7 +63,6 @@ body .about {
   margin: 5em 0;
 }
 body .about h1{
-  color: var(--color-red);
   font-size: 5em;
 }
 body .about .container article .btn_leer{
@@ -138,4 +136,27 @@ body .team h1 {
 /*footer*/
 .footer{
   background-color: var(--bg-footer);
+}
+
+
+
+
+@media only screen and (min-width: 1024px) {
+  body .banner .container{
+    position: absolute;
+    top: 10em;
+    left: 2em;
+    box-sizing: content-box;
+    width: 55em;
+    
+  } 
+  body .banner .container h1{
+    font-size: 3em;
+  }
+  body .banner .container a{
+  margin-top: 1em;
+   font-size: 1em;
+   background: var(--color-red);
+   border-radius:4em;
+ }
 }
