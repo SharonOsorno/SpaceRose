@@ -53,12 +53,12 @@ body a:hover{
 /*Comic*/
 
 .flipbook{
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin:0 auto;
+	padding-top:40px;
+	width:905px;
+	height:540px;
+	position:relative;
 }
-
 .flipbook button {
   border: none;
   background-color: transparent;
@@ -66,15 +66,12 @@ body a:hover{
   cursor: pointer;
   transition: transform 1s;
 }
-
 .flipbook button:focus {
   outline: none;
 }
-
 .flipbook button:hover i {
   color:var(--color-red);
 }
-
 .flipbook i {
   color:var(--color-red);
   font-size: 4em;
@@ -82,8 +79,8 @@ body a:hover{
 
 /* Book */
 .book {
-  width: 350px;
-  height: 500px;
+ width: 400px;
+  height: 550px;
   position: relative;
   transition: transform 1s;
 }
@@ -135,6 +132,7 @@ body a:hover{
   z-index: 0;
 }
 
+
 .front-content,
 .back-content {
   width: 100%;
@@ -157,29 +155,52 @@ body a:hover{
 
 /* Paper Z-index */
 #p1 {
-  z-index: 3;
+  z-index: 8;
 }
 
 #p2 {
-  z-index: 2;
+  z-index: 7;
 }
 
 #p3 {
+  z-index: 6;
+}
+#p4 {
+  z-index: 5;
+}
+#p5 {
+  z-index: 4;
+}
+#p6 {
+  z-index: 3;
+}
+#p7 {
+  z-index: 2;
+}
+#p8 {
   z-index: 1;
 }
 
+
+
+
 /* Customization */
 
-.book-title {
-  font-size: 3em;
-  margin-bottom: 40px;
-}
 
-.cover-img {
-  width: 200px;
-  height: 270px;
+
+.img-portada {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  border-radius: 30px;
+}
+.escene-img{
+  width: 85%;
+  object-fit: cover;
+  border-radius: 0.5em; 
+}
+.cuadro_img {
+ display: flex;
+ justify-content: center;
 }
 
 #b1 {
