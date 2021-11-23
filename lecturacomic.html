@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <link rel="shortcut icon" href="./Img/favicon.ico">
   <link rel="stylesheet" href="./styles/lectura.css" />
-  <link rel="stylesheet" href="./styles/videos.css" />
+  <link rel="stylesheet" href="./styles/recursoscomic.css" />
 </head>
 
 <body class="parrafo">
@@ -37,7 +37,7 @@
     </header>
   </div>
 
-  <section class="flipbook mt-5 d-flex">
+  <section class="flipbook  d-flex ">
 
     <button id="prevBtn">
       <i class="fas fa-arrow-circle-left"></i>
@@ -46,17 +46,19 @@
 
 
     <div id="book" class="book">
+
       <!-- Paper 1 -->
-      <div id="p1" class="pagina">
+      <section id="p1" class="pagina">
         <div class="front">
-          <div class="front-content">
-            <img class="img-portada" src="./Img/img_boceto.jpg" alt="">
-          </div>
+          <article class="front-content">
+            <img class="img-portada" src="./img/Space rose_portada.png" alt="img-portada">
+          </article>
         </div>
+
         <div class="back">
-          <div class="back-content bg-dark d-flex justify-content-end align-items-start">
-            <article class="team content text-white text-left mb-2 ml-2">
-              <h5 class="text-bold text-white mb-3">Colaboradores</h5>
+          <div class="back-content bg-dark team">
+            <article class="team content text-white">
+              <h5 class="text-bold mb-3">Colaboradores</h5>
               <div>
                 <p class="parrafo">
                   Estefania Marín
@@ -69,100 +71,123 @@
                 </p>
               </div>
             </article>
-
           </div>
         </div>
-      </div>
+      </section>
 
 
       <!-- Paper 2 -->
       <div id="p2" class="pagina">
-        <div class="front">
+        <article class="front">
           <div class="front-content">
             <h1><img src="./img/logo Spacerose.png" class="logo" alt=""></h1>
           </div>
-        </div>
+        </article>
+
         <div class="back">
           <div class="back-content">
-            <div class="container d-flex justify-content-center px-5 flex-column">
-              <h1 class="text-bold text-danger text-center">SpaceRose</h1>
-              <p class="parrafo text-center">SpaceRose es una historia ambientada en los años 60, centrada en la llegada
+            <article class="container px-3 text-center">
+              <h1 class="text-bold text-danger">SpaceRose</h1>
+              <p class="parrafo">SpaceRose es una historia ambientada en los años 60, centrada en la llegada
                 del hombre a la luna en el Apollo 11, este relato será narrado por Katherine Johnson, mujer
-                afrodescendiente que realizó
-                los cálculos que hicieron posible dicho suceso.</p>
-            </div>
+                afrodescendiente que realizó los cálculos que hicieron posible dicho suceso.</p>
+            </article>
           </div>
         </div>
       </div>
 
+
       <!-- Paper 3 -->
       <div id="p3" class="pagina">
         <div class="front">
-          <div class="front-content"> <audio controls class="audio1">
-              <source controls src="./audio/voz_en_off_001.mp3" type="audio/mp3">
-            </audio>
-            <div class="cuadro_img">
-              <img class="escene-img" src="./img/miniaturas/video 001.png" alt="">
-            </div>
-            <audio controls class="audio2">
-              <source controls src="./audio/voz_en_off_002.mp3" type="audio/mp3">
-            </audio>
-            <div class="c-video">
-              <video class="video" controls poster="./img/miniaturas/video 001.png"
-                src="./video/escenas/video_escena_001.mp4"></video>
-            </div>
-            <audio controls class="audio2">
-              <source controls src="./audio/voz_en_off_003.wav" type="audio/mp3">
+          <article class="front-content">
+            <audio controls class="audio_superior">
+              <source src="./audio/voz_en_off_001.mp3" type="audio/mp3">
             </audio>
 
-          </div>
+            <div class="cuadro_img">
+              <img class="escene-img" src="./img/miniaturas/video 001.png" alt="katerine_sala">
+            </div>
+
+            <audio controls class="audio_medio">
+              <source src="./audio/voz_en_off_002.mp3" type="audio/mp3">
+            </audio>
+
+            <video class="c-video" controls poster="./img/miniaturas/video 001.png"
+              src="./video/escenas/video_escena_001.mp4">
+            </video>
+
+            <audio controls class="audio_inferior">
+              <source controls src="./audio/voz_en_off_003.wav" type="audio/wav">
+            </audio>
+
+          </article>
         </div>
 
         <div class="back">
-          <div class="back-content">
-            <p>actualidad</p>
-            <div class="c-video">
-              <video class="video" controls poster="./img/miniaturas/video 002.png"
-                src="./video/escenas/video_escena_002_A.mp4"></video>
-            </div>           
-            <audio controls class="audio2">
+          <article class="back-content">
+            <p class="bg-danger parrafo py-2 px-5 text-white mb-0 rounded-top">Actualidad...</p>
+
+            <video class="c-video video_superior" controls poster="./img/miniaturas/video 002A.png"
+              src="./video/escenas/video_escena_002_A.mp4"></video>
+
+            <audio controls class="audio_medio">
               <source controls src="./audio/voz_en_off_004.mp3" type="audio/mp3">
             </audio>
-            <div class="c-video">
-              <video class="video" controls poster="./img/img_boceto.jpg" src="./video/escenas/video_escena_002_B.mp4"></video>
-            </div>
-          </div>
+
+            <video class="c-video video_inferior" controls poster="./img/img_boceto.jpg"
+              src="./video/escenas/video_escena_002_B.mp4">
+            </video>
+
+          </article>
         </div>
       </div>
 
       <!-- Paper 4 -->
       <div id="p4" class="pagina">
         <div class="front">
-          <div class="front-content">
-            <audio controls class="audio2">
-              <source controls src="./audio/voz_en_off_005.wav" type="audio/mp3">
+          <article class="front-content">
+
+            <audio controls class="audio_superior">
+              <source src="./audio/voz_en_off_005.wav" type="audio/wav">
             </audio>
-            <div class="c-video">
-              <video class="video" controls poster="./img/miniaturas/video 003.png"
-                src="./video/escenas/video_escena_003.mp4"></video>
-            </div>
-            <audio controls class="audio2">
-              <source controls src="./audio/Voz_en_off_006.wav" type="audio/mp3">
-            </audio> 
-            <div class="cuadro_img"><img class="escene-img" src="./img/miniaturas/video 004.png" alt="">
-            </div>
-                      
-            
-          </div>
+
+            <video class="c-video" controls poster="./img/miniaturas/video 003.png"
+              src="./video/escenas/video_escena_003.mp4">
+            </video>
+
+
+            <audio controls class="audio_medio">
+              <source src="./audio/Voz_en_off_006.wav" type="audio/wav">
+            </audio>
+
+            <video class="c-video video_inferior" controls poster="#" src="./video/escenas/video_escena_003.mp4">
+            </video>
+
+
+          </article>
         </div>
 
         <div class="back">
-          <div class="back-content">
-            <audio controls class="audio2">
-              <source controls src="./audio/voz_en_off_007.wav" type="audio/mp3">
+          <article class="back-content">
+
+            <audio controls class="audio_superior">
+              <source src="./audio/voz_en_off_007.wav" type="audio/wav">
             </audio>
-            <h1>-imagen salto de tiempo-</h1>
-          </div>           
+
+            <div class="cuadro_img">
+              <img class="escene-img" src="./img/miniaturas/salto de tiempo.jpg" alt="salto_tiempo">
+            </div>
+
+            <video class="c-video" controls poster="./img/miniaturas/video 005.png"
+              src="./video/escenas/video_escena_005.mp4">
+            </video>
+
+            <audio controls class="audio_inferior">
+              <source src="./audio/voz_en_off_008.wav" type="audio/wav">
+            </audio>
+
+          </article>
 
         </div>
       </div>
@@ -171,16 +196,11 @@
       <div id="p5" class="pagina">
         <div class="front">
           <div class="front-content">
-            <div class="c-video">
-              <video class="video" controls poster="./img/miniaturas/video 005.png"
-                src="./video/escenas/video_escena_005.mp4"></video>
+
+            <div class="cuadro_img">
+              <img class="escene-img" src="./img/miniaturas/salto de tiempo.jpg" alt="salto_tiempo">
             </div>
-            <audio controls class="audio2">
-              <source controls src="./audio/voz_en_off_008.wav" type="audio/mp3">
-            </audio>           
-            <div>
-              <h2>- Imagen salto de tiempo-</h2>
-            </div>
+
             <div class="cuadro_img"><img class="escene-img" src="./img/img_boceto.jpg" alt="">
             </div>
           </div>
@@ -190,92 +210,23 @@
           <div class="back-content">
             <audio controls class="audio2">
               <source controls src="./audio/voz_en_off_009.wav" type="audio/mp3">
-            </audio> 
+            </audio>
             <div class="cuadro_img mb-5"><img class="escene-img" src="./Img/img_boceto.jpg" alt="">
             </div>
             <audio controls class="audio2">
               <source controls src="./audio/voz_en_off_010.wav" type="audio/mp3">
             </audio>
             <div class="c-video">
-              <video class="video" controls poster="./img/miniaturas/video 007.png" src="./video/escenas/video_escena_007.mp4"></video>
+              <video class="video" controls poster="./img/miniaturas/video 007.png"
+                src="./video/escenas/video_escena_007.mp4"></video>
             </div>
-             
-          </div>
 
+          </div>
         </div>
       </div>
 
 
-      <!-- Paper 6 -->
-      <div id="p6" class="pagina">
-        <div class="front">
-          <div class="front-content">
-            <audio controls class="audio2">
-              <source controls src="./audio/voz_en_off_011.wav" type="audio/mp3">
-            </audio>
-            <div class="cuadro_img mb-5"><img class="escene-img" src="./Img/img_boceto.jpg" alt="">
-            </div>
 
-            <div class="c-video">
-              <video class="video" controls src="./video/escenas/video_escena_002_B.mp4"></video>
-            </div>
-            <div>
-              <h2>-salto de tiempo-</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="back">
-          <div class="back-content">
-            <div class="cuadro_img mb-5"><img class="escene-img" src="./Img/img_boceto.jpg" alt="">
-            </div>
-            <div class="c-video">
-              <video class="video" controls src="./video/escenas/video_escena_010.mp4"></video>
-            </div>
-          </div>
-
-        </div>
-      </div>
-
-      <!-- Paper 7 -->
-      <div id="p7" class="pagina">
-        <div class="front">
-          <div class="front-content">
-            <div class="cuadro_img mb-5"><img class="escene-img" src="./Img/img_boceto.jpg" alt="">
-            </div>
-            <div class="c-video">
-              <video class="video" controls src="./video/escenas/video_escena_002_B.mp4"></video>
-            </div>
-            <div>
-              <h2>-salto de tiempo-</h2>
-            </div>
-          </div>
-        </div>
-
-        <div class="back">
-          <div class="back-content">
-            <div class="cuadro_img mb-5"><img class="escene-img" src="./Img/img_boceto.jpg" alt="">
-            </div>
-            <div class="c-video">
-              <video class="video" controls src="./video/escenas/video_escena_010.mp4"></video>
-            </div>
-          </div>
-
-        </div>
-      </div>
-      <!-- Paper 8 -->
-      <div id="p8" class="pagina">
-        <div class="front">
-          <div class="front-content bg-dark">
-          </div>
-        </div>
-
-        <div class="back">
-          <div class="back-content bg-dark">
-          </div>
-
-        </div>
-      </div>
 
 
 
@@ -356,7 +307,6 @@
 
 
   <!-- script -->
-  <script src="./js/videos.js"></script>
   <script src="./js/comic.js"></script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>

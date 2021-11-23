@@ -1,30 +1,3 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0; 
-  outline: 0;
-  box-sizing: border-box;
-  text-decoration: none;  
-  }
-
-@font-face{
-  src: url(../font/d-din/D-DIN-Bold.otf);
-  font-family: "DIN-Bold";
-  font-weight: normal;
-}
-@font-face{
-  src: url(../font/Helvetica-Font/Helvetica.ttf);
-  font-family:"Helvetica-Regular";
-  font-weight: normal;
-}
-
-.text-bold{
-font-family: DIN-Bold;
-}
-.parrafo{
-font-family: Helvetica-Regular;
-font-size: 20px;
-} 
 
 :root{
   --bg-footer: hsl(0, 0%, 0%);
@@ -34,23 +7,6 @@ font-size: 20px;
   --color-grey:hsl(0, 0%, 44%);
   --color-red:hsl(354, 70%, 54%);
 }
-
-body {   
-  background:url(../img/bg/bg_comic.png);
-  background-repeat: no-repeat;
-}
-body a:hover{
-  text-decoration: none;
-}
-.Header{
-  background-color: var(--bg-footer);
- }
-.Header header .logo{
-  width: 5em;
-}
-
-
-/*Comic*/
 
 .flipbook{
   margin:0 auto;
@@ -106,7 +62,6 @@ body a:hover{
 }
 .front {
   backface-visibility: hidden;
-  border-left: 3px solid var(--color-blue);
 }
 
 .front, 
@@ -119,7 +74,7 @@ body a:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: var(--bg-white);
   transform-origin: left;
   transition: transform 1s;
 }
@@ -146,6 +101,13 @@ body a:hover{
 .back-content {
   transform: rotateY(180deg)
 }
+.team {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-self: start;
+  padding: 0.8em;
+}
 
 /* Paper Flipped */
 .flipped .front,
@@ -157,11 +119,9 @@ body a:hover{
 #p1 {
   z-index: 8;
 }
-
 #p2 {
   z-index: 7;
 }
-
 #p3 {
   z-index: 6;
 }
@@ -171,15 +131,7 @@ body a:hover{
 #p5 {
   z-index: 4;
 }
-#p6 {
-  z-index: 3;
-}
-#p7 {
-  z-index: 2;
-}
-#p8 {
-  z-index: 1;
-}
+
 
 
 
@@ -188,20 +140,6 @@ body a:hover{
 
 
 
-.img-portada {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.escene-img{
-  width: 85%;
-  object-fit: cover;
-  border-radius: 0.5em; 
-}
-.cuadro_img {
- display: flex;
- justify-content: center;
-}
 
 #b1 {
   padding: 20px;
@@ -221,32 +159,3 @@ body a:hover{
 }
 
 
-/*contact*/
-.btn-contact {
-  background: var(--color-red);
-}
-
-.iconContact{
-  border-radius: 100%;
-  width: 70px;
-  height: 70px;
-  background: var(--color-red);
-  position: fixed;
-  bottom: 100px;
-  right: 50px;
-  z-index: 10;  
-}
-.Contact_content{ 
-  position: fixed;
-  bottom: 5em;
-  right: -50em;
-  z-index: 20;
-} 
-.privacidad{
-  color:var(--color-red);
-}
-
-/*footer*/
-.footer{
-  background-color: var(--bg-footer);
-}
