@@ -20,11 +20,11 @@
         <a href="./index.html" class="navbar-brand logo">
           <img class="img-fluid logo" src="./Img/logo Spacerose.png" alt="Spacerose" />
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainMenu">
+        <button class="navbar-toggler btn-menu" type="button" data-toggle="collapse" data-target="#mainMenu">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-light navbar-collapse" id="mainMenu">
-          <ul class="navbar-nav ml-auto menu">
+          <ul class="navbar-nav ml-auto menu my-4">
             <li class="nav-item">
               <a class="nav-link  mr-5 text-white text-bold" href="./index.html">Home</a>
             </li>
@@ -38,32 +38,35 @@
   </div>
 
   <section class="banner">
-    <img class="img-fluid" src="./img/banner003.jpg" alt="">
-    <div class="container">
-      <article class="text-white text-bold m-5">
-        <h1 class="col-8">Bienvenido a esta aventura espacial</h1>
-        <a type="submit" class="px-4 py-3 text-white d-inline">Despeguemos</a>
-      </article>
+    <div >
+      <img class="img-fluid" src="./Img/" alt="">
+      <div class="container">
+        <article class="text-white text-bold m-5">
+          <h1 class="col-8">Bienvenido a esta aventura espacial</h1>
+          <a type="submit" class=" text-white d-inline" href="./lecturacomic.html">Despeguemos</a>
+        </article>
+      </div>
     </div>
+    
   </section>
 
   <section class="about">
-    <div class="container ">
-      <div class="d-flex justify-content-center align-items-center text-justify">
-        <article class="col-lg-6 ">
+    <div class="container">
+      <div class="d-flex content_about ">
+        <article class="col-lg-6 col-md-10 col-sm-12">
           <h1 class="text-bold text-danger">SpaceRose</h1>
-          <p class="parrafo">SpaceRose es una historia ambientada en los años 60, centrada en la llegada del hombre a la
-            luna en el Apollo 11, este relato será narrado por Katherine Johnson, mujer afrodescendiente que realizó
-            los cálculos que hicieron posible dicho suceso.
+          <p class="parrafo col-md-12 col-sm-12">SpaceRose es una historia ambientada en los años 60, centrada en la llegada del
+            hombre a la luna en el Apollo 11, este relato será narrado por Katherine Johnson, mujer afrodescendiente que
+            realizó los cálculos que hicieron posible dicho suceso.
           </p>
           <a type="submit" class=" mt-2 px-5 py-2 btn_leer text-white text-bold" href="./lecturacomic.html">
             Leer comic
           </a>
         </article>
 
-        <article class="col-6-6">
+        <article class="col-lg-6 col-md-10">
           <video autoplay loop class="embed-responsive embed-responsive-16by9 shadow p-3 mb-5 bg-body rounded"
-            src="./Video/logo_spacerose.mp4" width="500" height="300"></video>
+            src="./video/logo_spacerose.mp4" width="500" height="300"></video>
         </article>
       </div>
     </div>
@@ -73,7 +76,8 @@
     <div class="container d-flex flex-column justify-content-center align-items-center">
       <h1 class="text-bold text-white">Personajes</h1>
       <p class="parrafo text-white">Conoce a nuestros protagonistas</p>
-      <article class="col-lg-12 mt-5 d-flex justify-content-center align-items-center">
+
+      <article class="col-10 my-5 text-center">
 
         <button type="button" data-toggle="modal" data-target="#modalkaterine">
           <img src="./img/personajes/Katerine.png" alt="">
@@ -84,61 +88,6 @@
         <button type="button" data-toggle="modal" data-target="#modalExtra">
           <img src="./img/personajes/extra masculino.png" alt="">
         </button>
-
-
-        <!-- Modal -->
-        <div class="modal fade modal_content" id="modalkaterine" tabindex="-1" aria-labelledby="ModalLabelkaterine"
-          aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabelkaterine">Katherine Jhonsone</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="modal fade" id="modalkranz" tabindex="-1" aria-labelledby="ModalLabelkranz" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabelkranz">Kranz</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="modal fade" id="modalExtra" tabindex="-1" aria-labelledby="ModalLabelExtra" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabelExtra">Extras</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                ...
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </article>
-
-      <article class="col-lg-12 mb-5 d-flex justify-content-center align-items-center">
         <button type="button" data-toggle="modal" data-target="#modalNeils">
           <img src="./img/personajes/neils.png" alt="">
         </button>
@@ -150,17 +99,122 @@
         </button>
 
 
-        <div class="modal fade" id="modalNeils" tabindex="-1" aria-labelledby="ModalLabelNeils" aria-hidden="true">
+        <!-- Modal -->
+        <div class="modal fade modal_content" id="modalkaterine" tabindex="-1" aria-labelledby="ModalLabelkaterine"
+          aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabelNeils">Neils Anrmtrong</h5>
+              <div class="modal-header bg-danger">
+                <h5 class="modal-title" id="ModalLabelkaterine"></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                ...
+              <div class="modal-body p-5">
+                <div class="d-flex align-items-center justify-content-center col-12">
+                  <img class="col-5 img-fluid" src="./img/personajes/Katerine.png" alt="">
+                  <article class="col-8">
+                    <h3>Katherine Johnson</h3>
+                    <p>Física/Matemática</p>
+                  </article>
+                </div>
+                <div class="my-3 col-10">
+                  <p><span class="text-bold">Pais: </span>Estados unidos</p>
+                  <p><span class="text-bold">Premios: </span>Medalla de Oro del congreso de los Estados Unidos</p>
+                  <p class="text-justify">Mujer afrodescendiente que realizó los cálculos matemáticos que
+                    hicieron posible el despegue de la nave espacial: Apollo 11.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modalkranz" tabindex="-1" aria-labelledby="ModalLabelkranz" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-danger">
+                <h5 class="modal-title" id="ModalLabelkranz"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body p-5">
+                <div class="d-flex align-items-center justify-content-center ">
+                  <img class="col-5 img-fluid" src="./img/personajes/Kranz.png" alt="">
+                  <article class="col-8">
+                    <h3>Gene Kranz</h3>
+                    <p>Ingeniero/ director de vuelo</p>
+                  </article>
+                </div>
+                <div class="my-3">
+                  <p><span class="text-bold">Pais: </span>Estados unidos</p>
+                  <p><span class="text-bold">Premios: </span>Medalla de la Nasa al liderazgo excepcional, Medalla
+                    Presidencial de la Libertad, Medalla de la NASA de Servicios Distinguidos</p>
+                  <p class="text-justify">Director de vuelo en los programas de vuelo Géminis y Apollo de la NASA,
+                    gracias a su carisma, inteligencia y capacidad de liderazgo, los problemas que surgieron en el
+                    vuelo, fueron resueltos de forma práctica para mantener a los astronautas sanos y salvos.</p>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modalExtra" tabindex="-1" aria-labelledby="ModalLabelExtra" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-danger">
+                <h5 class="modal-title" id="ModalLabelExtra"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body p-5">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img class="col-4" src="./img/personajes/extra masculino.png" alt="">
+                  <article class="col-8">
+                    <h2>Leo Smith</h2>
+                    <p>Extra</p>
+                  </article>
+                </div>
+                <div class="my-3">
+
+                  <p><span class="text-bold">Pais: </span>Estados unidos</p>
+                  <p><span class="text-bold">Premios: </span>Mejor Extra del año</p>
+
+                  <p>Este personaje nos estará acompañando en algunas escenas en el transcurso de la historia,
+                    representa a los personajes secundarios y que por motivos de presupuesto, solo él fue elegido.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="modalNeils" tabindex="-1" aria-labelledby="ModalLabelNeils" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-danger">
+                <h5 class="modal-title" id="ModalLabelNeils"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body p-5">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img class="col-4" src="./img/personajes/neils.png" alt="">
+                  <article class="col-8">
+                    <h2>Neil Armstrong</h2>
+                    <p>Astronauta</p>
+                  </article>
+                </div>
+                <div class="my-3">
+                  <p><span class="text-bold">Pais: </span>Estados unidos</p>
+                  <p><span class="text-bold">Misiones: </span>Apolo 11, Gemini 8</p>
+                  <p>Siendo también un ingeniero aeroespacial, piloto de guerra, piloto de pruebas y profesor
+                    universitario, fue el primer el hombre en pisar la luna, autor de las palabras : <span
+                      class="text-bold">"Es un pequeño paso para un hombre, pero un gran salto para la humanidad"</span>
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -169,63 +223,87 @@
         <div class="modal fade" id="modalCollin" tabindex="-1" aria-labelledby="ModalLabelCollin" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabelCollin">Collin</h5>
+              <div class="modal-header bg-danger">
+                <h5 class="modal-title" id="ModalLabelCollin"></h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                ...
+              <div class="modal-body p-5">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img class="col-4" src="./img/personajes/collin.png" alt="">
+                  <article class="col-8">
+                    <h2>Michael Collins</h2>
+                    <p>Astronauta</p>
+                  </article>
+                </div>
+                <div class="my-3">
+                  <p><span class="text-bold">Pais: </span>Estados unidos</p>
+                  <p><span class="text-bold">Misiones: </span>Apolo 11, Gemini 10</p>
+                  <p>Piloto y tripulante encargado de mantener el módulo de mando del Apolo 11 en órbita
+                    alrededor de la Luna, si bien no piso suelo lunar, su aporte es significativo.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
 
         <div class="modal fade" id="modalAldrin" tabindex="-1" aria-labelledby="ModalLabelAldrin" aria-hidden="true">
           <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="ModalLabelAldrin">Aldrin</h5>
+              <div class="modal-header bg-danger">
+                </h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div class="modal-body">
-                ...
+              <div class="modal-body p-5">
+                <div class="d-flex align-items-center justify-content-center">
+                  <img class="col-4" src="./img/personajes/aldrin.png" alt="">
+                  <article class="col-8">
+                    <h2>Buzz Aldrin</h2>
+                    <p>Astronauta</p>
+                  </article>
+                </div>
+                <div class="my-3">
+                  <p><span class="text-bold">Pais: </span>Estados unidos</p>
+                  <p><span class="text-bold">Misiones: </span>Apolo 11, Gemini 12</p>
+                  <p>Segundo hombre en pisar la luna, se dedico a recoger rocas lunares, instalar instrumentos
+                    científicos y tomar fotografías con Neils Armstrong, fue quien dejo los objetos conmemorativos
+                    relacionados a todo el proceso de la carrera espacial, además de un disco de silicio con grabaciones
+                    de 73 países diferentes.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
       </article>
+
     </div>
   </Section>
 
-  <section class="team d-flex flex-column justify-content-center">
-    <h1 class="text-bold text-center mb-5">Equipo de trabajo</h1>
-
+  <section class="team mb-5">
     <div class="container d-flex flex-column justify-content-center align-items-center">
-      <div class="d-flex text-center col-lg-12">
-
-        <div class="col-lg-4 pb-5">
+      <h1 class="text-bold mb-5">Equipo de trabajo</h1>
+      <div class="row text-center justify-content-center">
+        <article class="pb-5">
           <img src="./img/equipo/Estefa_photo.png" class="img-fluid mb-4" alt="Estefa_photo">
           <h4 class="text-bold">Estefanía Marín</h4>
           <p class="parrafo">"Estudiante SENA"</p>
-        </div>
-
-        <div class="col-lg-4  pb-5">
+        </article>
+        <article class="pb-5">
           <img src="./img/equipo/Camilo_photo.png" class=" img-fluid mb-4" alt="camilo_photo">
           <h4 class="text-bold">Juan C. Gutierrez</h4>
           <p class="parrafo">"Estudiante SENA"</p>
-        </div>
-
-        <div class="col-lg-4">
+        </article>
+        <article class="pb-5">
           <img src="./img/equipo/Sharon_photo.png" class="img-fluid mb-4" alt="sharon_photo">
           <h4 class="text-bold">Sharon Osorno</h4>
           <p class="parrafo">"Estudiante SENA"</p>
-        </div>
-
+        </article>
       </div>
     </div>
   </section>
@@ -290,7 +368,8 @@
         <div class>
           <span class="text-white text-center">&copy;
             <script>document.write(new Date().getFullYear())</script>
-            <b> SpaceRose</b></span>
+            <b> SpaceRose</b>
+          </span>
         </div>
       </footer>
     </div>
