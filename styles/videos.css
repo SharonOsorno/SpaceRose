@@ -18,49 +18,5 @@
     max-width: 300px;
     position: relative;
     overflow: hidden;
-   }
+   } 
 
-.c-video:hover .controls {
-    transform: translateY(0) translateY(-1px);
-}
-
-.controls {
-    display: flex;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    flex-wrap: wrap; 
-    justify-content: end;
-    background: transparent;
-    transform: translateY(100%) translateY(-1px);
-    transition:  all 0.1s;
-}
-.buttons {
-    padding: 5px;
-}
-
-.buttons button {   
-    border: 0;
-    outline: 0;
-    cursor: pointer;
-    margin: 1em;
-    padding: 0.2em 0.5em;
-    border-radius: 3em;
-    color:var(--bg-white);
-    background: var(--color-red);
-   
-   
-   }
-
- 
-
-.buttons button:before {   
-    padding: 0.5em 0.2em;
-    display: inline-block;
-    font-size: 5px;
-    color: white;
-    background: var(--color-red);
-    font-weight: bold;
-    -webkit-font-smootthing: antialiased;
-
-}
