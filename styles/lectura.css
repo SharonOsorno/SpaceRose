@@ -117,19 +117,25 @@
 
 /* Paper Z-index */
 #p1 {
-  z-index: 8;
-}
-#p2 {
   z-index: 7;
 }
-#p3 {
+#p2 {
   z-index: 6;
 }
-#p4 {
+#p3 {
   z-index: 5;
 }
-#p5 {
+#p4 {
   z-index: 4;
+}
+#p5 {
+  z-index: 3;
+}
+#p6 {
+  z-index: 2;
+}
+#p7 {
+  z-index: 1;
 }
 
 
