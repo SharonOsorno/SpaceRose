@@ -13,7 +13,7 @@
 	padding-top:40px;
 	width:905px;
 	height:540px;
-	position:relative;
+	position:relative; 
 }
 .flipbook button {
   border: none;
@@ -38,7 +38,7 @@
  width: 400px;
   height: 550px;
   position: relative;
-  transition: transform 1s;
+  transition: transform 1s; 
 }
 
 .pagina {
@@ -76,7 +76,7 @@
   align-items: center;
   background-color: var(--bg-white);
   transform-origin: left;
-  transition: transform 1s;
+  transition: transform 1s;  
 }
 
 .front {

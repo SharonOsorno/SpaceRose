@@ -95,11 +95,12 @@ function goPrevious() {
                 paper1.classList.remove("flipped");
                 paper1.style.zIndex = 7;
                 break;
-            case 3:
 
+            case 3:
                 paper2.classList.remove("flipped");
                 paper2.style.zIndex = 6;
                 break;
+                
             case 4:
                 paper3.classList.remove("flipped");
                 paper3.style.zIndex = 5;
