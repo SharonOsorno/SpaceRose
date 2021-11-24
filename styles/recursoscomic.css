@@ -84,14 +84,13 @@ video{
     width: 100%;
     max-width: 300px;   
 } 
-.video_superior{
+.video_superior {
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
 }
 .video_inferior{
     border-bottom-left-radius: 1em;
-    border-bottom-right-radius: 1em;
-    background:#f1f3f4 ;
+    border-bottom-right-radius: 1em;    
 }
 
 /*imagenes*/
@@ -134,9 +133,4 @@ video{
 } 
 .privacidad{
     color:var(--color-red);
-}
-
-/*footer*/
-.footer{
-    background-color: var(--bg-footer);
 }
