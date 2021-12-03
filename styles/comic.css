@@ -97,7 +97,7 @@ body a:hover{
 
 
 .contenido__video{
-  background: #7DD174;
+  background: var(--color-blue);
   overflow: hidden;
   position: fixed;
   top: 0;
